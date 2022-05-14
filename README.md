@@ -49,7 +49,7 @@ ADT.hs
   * Parameterized types
   * Types with record syntax
   * GADTs and recursive data types
-* Read more about ADTs and Isomorphisms - [References](./ADT.md)
+* Read more about ADTs and Isomorphisms - [References](docs/ADT.md)
 
 ### ADT Monads [TODO]
 
