@@ -1,6 +1,6 @@
 # CPS-Type
 
-CPS type in Haskell and some exploration of it.
+Continuation-Passing-Style in Haskell and some exploration of it.
 
 ## Continuation Monad
 
@@ -10,7 +10,36 @@ Cont.hs
 * Proof of Functor/Applicative/Monad properties
 * Superset of Identity Monad [TODO]
 
-## Algebraic Data Types and Isomorphisms
+ContUtils.hs
+
+* Useful functions related to Cont Monad
+
+## Control with Cont Monad
+
+### Undelimited Continuations [TODO]
+
+CallCC.hs
+
+* Undelimited continuations
+  * Definition of call/cc
+  * Control with call/cc: capture the rest part with computation
+* Supporting materials
+  * [Undelimited continuations are not functions](https://okmij.org/ftp/continuations/undelimited.html)
+
+### Delimited Control [Work in progress]
+
+Delimited.hs
+
+* Delimited control
+  * Definition of shift and reset
+  * Properties of shift and reset
+  * Delimited control with shift and reset
+* Supporting materials
+  * [Introduction to programming with shift and reset](https://okmij.org/ftp/continuations/#tutorial)
+
+## Algebraic Data Types with Continuation-Passing-Style
+
+### ADTs and Isomorphisms
 
 ADT.hs
 
@@ -26,7 +55,7 @@ ADT.hs
   * [Algebraic Isomorphism](https://www.codewars.com/kata/algebraic-isomorphism)
   * [Exploding a Finite Algebraic Type](https://www.codewars.com/kata/5d4d9488a3d80c00158b54b8)
 
-## ADT Monads [TODO]
+### ADT Monads [TODO]
 
 SumType.hs
 

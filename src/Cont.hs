@@ -1,5 +1,7 @@
 module Cont where
 
+import Proof ((===))
+
 newtype Cont r a = Cont {runCont :: (a -> r) -> r}
 
 -- Monad instance
@@ -16,11 +18,6 @@ instance Monad (Cont r) where
     Cont m >>= f = Cont (\k -> m (\v -> runCont (f v) k))
 
 -- Properties proof
-
--- Propositional equality
-infixl 0 ===
-(===) :: a -> a -> a
-(===) = const 
 
 -- Functor
 
@@ -138,13 +135,3 @@ proof2 m1 (Cont m2) = m1 <*> Cont m2
 
 -- TODO: compare with identity monad
 
--- useful functions
-
--- evalCont :: Cont r r -> r
--- evalCont (Cont m) = m id
-
--- mapCont :: (r -> r) -> Cont r a -> Cont r a
--- mapCont f (Cont m) = Cont (f . m)
-
--- withCont :: ((b -> r) -> a -> r) -> Cont r a -> Cont r b
--- withCont f (Cont m) = Cont (m . f)
