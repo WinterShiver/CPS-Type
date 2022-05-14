@@ -49,11 +49,7 @@ ADT.hs
   * Parameterized types
   * Types with record syntax
   * GADTs and recursive data types
-* Read more about ADTs and Isomorphisms
-
-  * [Isomorphism](https://www.codewars.com/kata/5922543bf9c15705d0000020)
-  * [Algebraic Isomorphism](https://www.codewars.com/kata/algebraic-isomorphism)
-  * [Exploding a Finite Algebraic Type](https://www.codewars.com/kata/5d4d9488a3d80c00158b54b8)
+* Read more about ADTs and Isomorphisms - [References](./ADT.md)
 
 ### ADT Monads [TODO]
 
