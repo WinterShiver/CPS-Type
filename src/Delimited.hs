@@ -55,6 +55,7 @@ proof3 m = reset (return m)
 -- prop4 (composition)
 -- TODO: there should be a proper form like 
 -- `g (shift f >>= k) = shift f >>= (g . k)`
+-- mapCont g (shift f) = Cont (g . evalCont . f)
 
 
 -- Applications: delimited control with shift and reset
